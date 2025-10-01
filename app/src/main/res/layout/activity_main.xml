@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Mr.Head"
+        android:textSize="32sp"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Avatar Container -->
+    <FrameLayout
+        android:id="@+id/avatarContainer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Head (Base) -->
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/body"
+            android:scaleType="fitCenter"/>
+
+        <!-- Hair -->
+
+        <!-- Eyebrow -->
+
+        <!-- Eyes -->
+
+        <!-- Mustache -->
+
+        <ImageView
+            android:id="@+id/imgHair"
+            android:layout_width="174dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="-25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hair" />
+
+        <ImageView
+            android:id="@+id/imgEyebrow"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eyebrow" />
+
+        <ImageView
+            android:id="@+id/imgEyes"
+            android:layout_width="100dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eyes" />
+
+        <!-- Beard -->
+        <ImageView
+            android:id="@+id/imgBeard"
+            android:layout_width="155dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="187dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/beard" />
+
+        <ImageView
+            android:id="@+id/imgMustache"
+            android:layout_width="179dp"
+            android:layout_height="129dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="130dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/moustache" />
+
+    </FrameLayout>
+
+    <!-- Checkboxes Container -->
+    <LinearLayout
+        android:id="@+id/checkboxContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/avatarContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <CheckBox
+            android:id="@+id/cbHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Head"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+        <CheckBox
+            android:id="@+id/cbHair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hair"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+        <CheckBox
+            android:id="@+id/cbMustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moustache"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+        <CheckBox
+            android:id="@+id/cbEyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+        <CheckBox
+            android:id="@+id/cbEyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyebrow"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+        <CheckBox
+            android:id="@+id/cbBeard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beard"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:buttonTint="#26A69A"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
